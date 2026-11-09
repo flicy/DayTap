@@ -7,6 +7,10 @@
 
 ## 0. 30 秒：我们在做什么
 
+<p align="center">
+  <img src="assets/daytap-logo.png" alt="DayTap 薄荷绿软星品牌标记（#1DBA8A）" width="200">
+</p>
+
 **DayTap**＝自研 **Apple Watch 开麦小工具**：腕上点一下说话 → 音频回手机 → 变成可整理语料。  
 不是系统 Voice Memos，也不是「在得到里录」。
 

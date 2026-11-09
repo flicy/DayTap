@@ -116,4 +116,5 @@ Mac 磁盘紧时，读文档不要 clone；真要装机再用上面的浅克隆�
 GitHub 上的 main 和这一支是同一版手表工程，里面有 apps/DayTap 和这份说明。
 进不了 GitHub 时，用上面的 Origin 备用地址，分支名相同。
 手表工程路径：apps/DayTap/DayTap.xcodeproj。没有单独的 .xcworkspace。
+品牌脸在 docs/assets/daytap-logo.png（眯眼软星，薄荷绿 #1DBA8A）。组员打开接入文档时，开头会看到这张图。
 
