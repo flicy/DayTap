@@ -1,0 +1,119 @@
+DayTap 使用说明
+================
+
+组员先读 docs/onboarding-teammates.md（网页上就能看，不必先把整个仓库下载下来）。
+没有 TestFlight，也没有安装包可点。要装上手表，只能用自己的 Mac + Xcode 侧载。
+Watch 这一版在分支 cursor/daytap-watch-app-60a0（PR #1）。
+电脑空间不够时，不要下载全部历史，只浅克隆这一支：
+
+  git clone --depth 1 --branch cursor/daytap-watch-app-60a0 https://github.com/flicy/DayTap.git
+
+Origin 备用（同一分支）：
+
+  git clone --depth 1 --branch cursor/daytap-watch-app-60a0 https://origin.cursor.com/chris-cui/DayTap.git
+
+只看装机步骤：docs/teammate-watch-sideload.md
+
+DayTap 是「手腕上按一下录音，手机上收下音频，再变成文字和决策卡」的工具。
+产品名就叫 DayTap。手表上的 App 也叫 DayTap（工程里的 target 名叫 DayTap Watch App）。
+
+这一版还不能从 App Store 下载。要上课用，需要第二天早上用 Mac 上的 Xcode 装到自己的 iPhone 和 Apple Watch。
+
+一、三条路
+----------
+
+Track 0  手机保底
+  手表还没装好，或者这节课很长、人坐着不动。
+  用 iPhone 上的得到、语音备忘录或飞书妙记自己录。
+
+Track 1  手表录，不进得到
+  手表 DayTap 点「开始」，结束点「停止」。
+  音频出现在 iPhone 的 DayTap 里。
+  分享给飞书妙记，或存到文件 / 送到 Mac 做转写。
+  不要把这条音频交给得到。文字出来后贴给机器人，说「出决策卡」。
+
+Track 2  手表录，再到手机上的得到
+  手表上的操作和 Track 1 完全一样。
+  到了 iPhone，点「分享」，选得到大脑。
+  得到只存在于 iPhone。手表不会、也不能打开得到。
+
+二、明早怎么装（Mac）
+-------------------
+
+1. 用 Xcode 打开 apps/DayTap/DayTap.xcodeproj
+2. 左边两个目标 DayTap 和 DayTap Watch App 都选你的 Apple ID 签名
+3. 顶部选 DayTap，右边选你的 iPhone，按运行
+4. iPhone 若说不信任：设置 → 通用 → VPN 与设备管理 → 信任
+5. 手表上出现 DayTap。没有的话，改选 DayTap Watch App，目标选手表，再运行一次
+6. 手表允许麦克风，试录 10 秒，看 iPhone 的 DayTap 里有没有新录音
+7. 没有就让手表和手机靠近，手表点「再传一次」
+8. 仍然没有，这节课改用 Track 0，不要硬撑
+
+更细的步骤、Bundle ID、以及为什么用手表连接传文件，写在 docs/daytap-watch-app.md。
+课上点哪里，写在 docs/tomorrow-zero-pain.md。
+
+三、手表上的按钮
+---------------
+
+开始    开始录音。请让 DayTap 留在屏幕上。
+停止    保存，并传给 iPhone。
+再传一次  手机刚才没收到时再送。不重新录音。
+
+手腕放下或被来电打断时，会自动停止并保存，然后继续传。它不会在后台一直录。
+
+四、iPhone 上的按钮
+------------------
+
+分享      弹出系统分享。Track 2 选得到大脑；Track 1 选飞书妙记或隔空投送。
+存到文件  把音频拷到「文件」App，方便之后再选。
+文件 App 里也能直接找：文件 → 我的 iPhone → DayTap。
+
+链接 daytap://recordings 会打开 iPhone 上的 DayTap 列表。
+
+五、这一版做不到的事
+------------------
+
+- 不能从 App Store 安装，也还没提交审核。
+- 写代码的那台电脑没有 Xcode、没有手表，所以还没在真机上编译和安装。真的能不能录、能不能传到手机，要等 Mac 上第一次运行。
+- 模拟器上看得到界面，但传文件不可靠，不要用模拟器当成功。
+- 手表不连接得到。
+- 不是全天录音。
+
+六、仓库里别的东西
+----------------
+
+docs/          怎么用、两条转写路、明早步骤
+               组员先读 onboarding-teammates.md
+               只装手表读 teammate-watch-sideload.md
+apps/DayTap/   手表和 iPhone 的源码，以及 Xcode 工程
+pipeline/      录音之后的整理脚本（仍是骨架）
+corpus/        示例文字。真实录音不要提交
+
+登记一条本地录音的元数据（不上传音频）：
+
+  python3 pipeline/ingest/register_take.py --title "私教" --device daytap-watch --role wrist --consent
+
+  --device   iphone（手机录）或 daytap-watch（手表 DayTap）。旧值 watch 仍接受。
+  --role     wrist（腕上 Track 1/2）或 phone-fallback（Track 0）。旧值 primary / backup 仍接受。
+  --consent  表示已经和对方说好可以录。
+  结果是 pipeline/ingest/inbox/日期/ 下的一个 json。音频本身仍在手机里，不会进 git。
+
+七、这次补上的组员说明（2026-11-09）
+--------------------------------
+
+网页文档放在仓库里，是为了 Chris 不用反复口头讲，组员用浏览器就能对齐口径。
+Mac 磁盘紧时，读文档不要 clone；真要装机再用上面的浅克隆，只拿 Watch 那一支。
+
+还做不到、也不要对外说已经有的：
+- 没有 TestFlight，没有 .ipa，没有 App Store 下载。
+- 写文档的环境没有 Xcode、没有手表，所以这份说明没有在真机上再装一遍。
+- 浅克隆看不到别的分支的历史。要改代码，从 cursor/daytap-watch-app-60a0 再拉自己的功能分支。
+
+八、代码放在哪
+--------------
+
+组员用 GitHub 浅克隆：https://github.com/flicy/DayTap.git ，分支 cursor/daytap-watch-app-60a0。
+GitHub 上的 main 和这一支是同一版手表工程，里面有 apps/DayTap 和这份说明。
+进不了 GitHub 时，用上面的 Origin 备用地址，分支名相同。
+手表工程路径：apps/DayTap/DayTap.xcodeproj。没有单独的 .xcworkspace。
+

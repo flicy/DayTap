@@ -1,0 +1,11 @@
+崔莹：我的方案是手机作为录音主力，Watch 作为 backup。按需录音，按天做数据同步和整理。转录给到得到去做，最终沉淀成文档语料库。
+
+Anatole：挺期待 personal agent 在 Apple Watch 上去指挥，特别是 Grok 的 bot 在 watch 可以指挥。
+
+崔莹：现在天天被 Grok Bot 在 Apple Watch 上各种推送呢。
+
+云飞扬：我今天在研究怎么用苹果手表录音，自动上传到手机实时生成 PPT 或者决策表。这个能做到实时的话，personal AI 助理功能才能比较完美。
+
+群友：接一个 Grok Bot 的语音 API 就可以了，然后让 Grok Bot 调用电脑或它本身的 skill。不同的角色还可以切换 bot。
+
+Jack：我更倾向于 personal agent 能拥有一个人最真实、完整的数据，基于这个的需求预测能反过来要求供给侧出钱。

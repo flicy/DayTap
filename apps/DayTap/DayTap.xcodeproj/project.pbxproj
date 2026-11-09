@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B11000000000000000000001 /* DayTapLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* DayTapLog.swift */; };
+		B11000000000000000000002 /* RecordingRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000002 /* RecordingRecord.swift */; };
+		B11000000000000000000003 /* RecordingLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* RecordingLibrary.swift */; };
+		B11000000000000000000004 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000004 /* Formatters.swift */; };
+		B11000000000000000000005 /* DayTapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000000000000000000001 /* DayTapApp.swift */; };
+		B11000000000000000000006 /* PhoneLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000000000000000000002 /* PhoneLink.swift */; };
+		B11000000000000000000007 /* RecordingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000000000000000000003 /* RecordingListView.swift */; };
+		B11000000000000000000008 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000000000000000000004 /* ShareSheet.swift */; };
+		B11000000000000000000009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20000000000000000000006 /* Assets.xcassets */; };
+		B1100000000000000000000A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* WatchConnectivity.framework */; };
+		B21000000000000000000001 /* DayTapLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* DayTapLog.swift */; };
+		B21000000000000000000002 /* RecordingRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000002 /* RecordingRecord.swift */; };
+		B21000000000000000000003 /* RecordingLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* RecordingLibrary.swift */; };
+		B21000000000000000000004 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000004 /* Formatters.swift */; };
+		B21000000000000000000005 /* DayTapWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000001 /* DayTapWatchApp.swift */; };
+		B21000000000000000000006 /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000002 /* WatchModel.swift */; };
+		B21000000000000000000007 /* AudioCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000003 /* AudioCapture.swift */; };
+		B21000000000000000000008 /* WatchLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000004 /* WatchLink.swift */; };
+		B21000000000000000000009 /* RecordingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000005 /* RecordingScreen.swift */; };
+		B2100000000000000000000A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000007 /* Assets.xcassets */; };
+		B2100000000000000000000B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000004 /* AVFoundation.framework */; };
+		B2100000000000000000000C /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* WatchConnectivity.framework */; };
+		B31000000000000000000001 /* DayTap Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000002 /* DayTap Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF0000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0000000000000000000002;
+			remoteInfo = "DayTap Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC0000000000000000000004 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B31000000000000000000001 /* DayTap Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F10000000000000000000001 /* DayTapLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTapLog.swift; sourceTree = "<group>"; };
+		F10000000000000000000002 /* RecordingRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingRecord.swift; sourceTree = "<group>"; };
+		F10000000000000000000003 /* RecordingLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingLibrary.swift; sourceTree = "<group>"; };
+		F10000000000000000000004 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		F20000000000000000000001 /* DayTapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTapApp.swift; sourceTree = "<group>"; };
+		F20000000000000000000002 /* PhoneLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLink.swift; sourceTree = "<group>"; };
+		F20000000000000000000003 /* RecordingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingListView.swift; sourceTree = "<group>"; };
+		F20000000000000000000004 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		F20000000000000000000005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20000000000000000000006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F30000000000000000000001 /* DayTapWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTapWatchApp.swift; sourceTree = "<group>"; };
+		F30000000000000000000002 /* WatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModel.swift; sourceTree = "<group>"; };
+		F30000000000000000000003 /* AudioCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCapture.swift; sourceTree = "<group>"; };
+		F30000000000000000000004 /* WatchLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLink.swift; sourceTree = "<group>"; };
+		F30000000000000000000005 /* RecordingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingScreen.swift; sourceTree = "<group>"; };
+		F30000000000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F30000000000000000000007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE0000000000000000000001 /* DayTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0000000000000000000002 /* DayTap Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DayTap Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0000000000000000000004 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EE0000000000000000000003 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC0000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1100000000000000000000A /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2100000000000000000000B /* AVFoundation.framework in Frameworks */,
+				B2100000000000000000000C /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000004 /* Shared */,
+				AA0000000000000000000005 /* DayTap */,
+				AA0000000000000000000006 /* DayTapWatch */,
+				AA0000000000000000000007 /* Frameworks */,
+				AA0000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000004 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000001 /* DayTapLog.swift */,
+				F10000000000000000000002 /* RecordingRecord.swift */,
+				F10000000000000000000003 /* RecordingLibrary.swift */,
+				F10000000000000000000004 /* Formatters.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000005 /* DayTap */ = {
+			isa = PBXGroup;
+			children = (
+				F20000000000000000000001 /* DayTapApp.swift */,
+				F20000000000000000000002 /* PhoneLink.swift */,
+				F20000000000000000000003 /* RecordingListView.swift */,
+				F20000000000000000000004 /* ShareSheet.swift */,
+				F20000000000000000000005 /* Info.plist */,
+				F20000000000000000000006 /* Assets.xcassets */,
+			);
+			path = DayTap;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000006 /* DayTapWatch */ = {
+			isa = PBXGroup;
+			children = (
+				F30000000000000000000001 /* DayTapWatchApp.swift */,
+				F30000000000000000000002 /* WatchModel.swift */,
+				F30000000000000000000003 /* AudioCapture.swift */,
+				F30000000000000000000004 /* WatchLink.swift */,
+				F30000000000000000000005 /* RecordingScreen.swift */,
+				F30000000000000000000006 /* Info.plist */,
+				F30000000000000000000007 /* Assets.xcassets */,
+			);
+			path = DayTapWatch;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE0000000000000000000004 /* AVFoundation.framework */,
+				EE0000000000000000000003 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE0000000000000000000001 /* DayTap.app */,
+				EE0000000000000000000002 /* DayTap Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB0000000000000000000001 /* DayTap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0000000000000000000008 /* Build configuration list for PBXNativeTarget "DayTap" */;
+			buildPhases = (
+				CC0000000000000000000001 /* Sources */,
+				CC0000000000000000000003 /* Frameworks */,
+				CC0000000000000000000002 /* Resources */,
+				CC0000000000000000000004 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF0000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = DayTap;
+			productName = DayTap;
+			productReference = EE0000000000000000000001 /* DayTap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB0000000000000000000002 /* DayTap Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0000000000000000000009 /* Build configuration list for PBXNativeTarget "DayTap Watch App" */;
+			buildPhases = (
+				CC0000000000000000000005 /* Sources */,
+				CC0000000000000000000007 /* Frameworks */,
+				CC0000000000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DayTap Watch App";
+			productName = "DayTap Watch App";
+			productReference = EE0000000000000000000002 /* DayTap Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BB0000000000000000000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BB0000000000000000000002 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = DD0000000000000000000007 /* Build configuration list for PBXProject "DayTap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
+			);
+			mainGroup = AA0000000000000000000002;
+			productRefGroup = {PRODUCTS} /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB0000000000000000000001 /* DayTap */,
+				BB0000000000000000000002 /* DayTap Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC0000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B11000000000000000000009 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0000000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2100000000000000000000A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC0000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B11000000000000000000001 /* DayTapLog.swift in Sources */,
+				B11000000000000000000002 /* RecordingRecord.swift in Sources */,
+				B11000000000000000000003 /* RecordingLibrary.swift in Sources */,
+				B11000000000000000000004 /* Formatters.swift in Sources */,
+				B11000000000000000000005 /* DayTapApp.swift in Sources */,
+				B11000000000000000000006 /* PhoneLink.swift in Sources */,
+				B11000000000000000000007 /* RecordingListView.swift in Sources */,
+				B11000000000000000000008 /* ShareSheet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0000000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21000000000000000000001 /* DayTapLog.swift in Sources */,
+				B21000000000000000000002 /* RecordingRecord.swift in Sources */,
+				B21000000000000000000003 /* RecordingLibrary.swift in Sources */,
+				B21000000000000000000004 /* Formatters.swift in Sources */,
+				B21000000000000000000005 /* DayTapWatchApp.swift in Sources */,
+				B21000000000000000000006 /* WatchModel.swift in Sources */,
+				B21000000000000000000007 /* AudioCapture.swift in Sources */,
+				B21000000000000000000008 /* WatchLink.swift in Sources */,
+				B21000000000000000000009 /* RecordingScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF0000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0000000000000000000002 /* DayTap Watch App */;
+			targetProxy = FF0000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD0000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DD0000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD0000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DayTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chriscui.daytap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD0000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DayTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chriscui.daytap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD0000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DayTapWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chriscui.daytap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		DD0000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DayTapWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chriscui.daytap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD0000000000000000000007 /* Build configuration list for PBXProject "DayTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0000000000000000000001 /* Debug */,
+				DD0000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0000000000000000000008 /* Build configuration list for PBXNativeTarget "DayTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0000000000000000000003 /* Debug */,
+				DD0000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0000000000000000000009 /* Build configuration list for PBXNativeTarget "DayTap Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0000000000000000000005 /* Debug */,
+				DD0000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0000000000000000000001 /* Project object */;
+}
